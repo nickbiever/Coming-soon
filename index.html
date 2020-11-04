@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BASE APPAREL</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main>
+            <img class="logo" src="img/logo.svg">
+
+            <section>
+                <h1><span class="red-text">We're</span> <br> coming <br> soon</h1>
+
+                <p class="red-text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+                <form onsubmit="return false"> <!-- return false to prevent page from reloading -->
+                    <input id="inputField" type="email" placeholder="Email Address">
+                    <img id="warningIcon" style="display: none;" src="/img/icon-error.svg">
+                    <button onclick="validateEmail()"><img src="img/icon-arrow.svg"></button>
+                    <p id="warningText" style="display: none;">Please provide a valid email</p>
+                </form>
+            </section>
+        </main>
+        <div class="hero-image"></div>
+
+        <script src="/js/validateEmail.js"></script>
+    </body>
+</html>
